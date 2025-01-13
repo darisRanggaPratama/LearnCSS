@@ -1,0 +1,95 @@
+/* Universal Selector */
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: chocolate;
+}
+
+/* Type Selector */
+
+h1 {
+    color: green;
+}
+
+h2 {
+    color: blue;
+}
+
+/* Class Selector */
+.sarapan {
+    color: red;
+}
+
+/* Class Selector: Combined Selector */
+li.sarapan{
+    color: green;
+}
+
+/*
+Perbedaan syntax CSS dalam contoh yang kamu berikan adalah dalam penggunaan selector.
+
+.sarapan adalah selector kelas (class selector), yang akan memilih semua elemen HTML yang memiliki kelas sarapan. Jadi, jika kamu memiliki elemen seperti <p class="sarapan">, maka teks dalam paragraf tersebut akan berwarna merah.
+
+li.sarapan adalah selector kombinasi (combined selector), yang akan memilih semua elemen li (list item) yang memiliki kelas sarapan. Jadi, jika kamu memiliki elemen seperti <li class="sarapan">, maka teks dalam list item tersebut akan berwarna hijau.
+
+Dengan kata lain, .sarapan akan memilih semua elemen dengan kelas sarapan, tidak peduli apa tag HTML-nya, sedangkan li.sarapan hanya akan memilih elemen li yang memiliki kelas sarapan.
+*/
+
+/* ID Selector */
+#maksi-senin {
+    color: yellow;
+}
+
+/* Child Selector */
+p > b {
+    color: purple;
+}
+
+li > b {
+    color: orange;
+}
+
+/* Descendant Selector */
+p b {
+    color: purple;
+}
+
+/* adjacent sibling selector */
+p + h2 {
+    color: black;
+}
+
+/* General Sibling Selector */
+h2~p {
+    color: blueviolet;
+    font-family: 'Times New Roman';
+}
+
+/* Attribute Selector */
+/* Memilih semua elemen <li> dengan atribut 'data-type' yang bernilai 'food' */
+li[data-type="food"] {
+    color: darkolivegreen;    
+  }
+  
+  /* Memilih semua elemen <li> dengan atribut 'data-type' yang bernilai 'drink' */
+  li[data-type="drink"] {
+    color: darkgray;
+  }
+
+
+/*************  ✨ Codeium Command ⭐  *************/
+/*
+Selector Type:
+
+1. Universal Selector: * { }
+2. Type Selector: element { }
+3. Class Selector: .class { }
+4. ID Selector: #id { }
+5. Attribute Selector: [attr] { }
+6. Combined Selector: selector1 selector2 { }
+7. Child Selector: parent > child { }
+8. Descendant Selector: parent child { }
+9. Adjacent Sibling Selector: element + element { }
+10. General Sibling Selector: element ~ element { }
+*/
+/******  28be7383-d335-4ee3-b7de-27a24d8aac66  *******/ 
